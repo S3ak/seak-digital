@@ -1,13 +1,14 @@
 import Head from "next/head";
 
-import TitleSlider from "../components/displays/title-slider";
-import BtnMenu from "../components/user-inputs/buttons/menu";
 import BtnSubmit from "../components/user-inputs/buttons/submit";
 import BtnCTARound from "../components/user-inputs/buttons/cta-round";
 import BtnCTALandscape from "../components/user-inputs/buttons/cta-landscape";
 import Gallery from "../components/user-inputs/gallery";
 import IntroArticle from "../components/displays/intro-article";
 import InputField from "../components/user-inputs/input-fields/base";
+import Header from "../components/displays/header";
+import Stage from "../components/displays/stage";
+import Footer from "../components/displays/footer";
 
 export default function Home() {
   const mockGalleryItems = [
@@ -21,40 +22,6 @@ export default function Home() {
     },
   ];
 
-  const titleSlideItems = [
-    {
-      title: "Digital",
-      orderId: 1,
-    },
-    {
-      title: "Design",
-      orderId: 2,
-    },
-    {
-      title: "Dev",
-      orderId: 3,
-    },
-    {
-      title: "Dj",
-      orderId: 4,
-    },
-    {
-      title: "Photo",
-      orderId: 5,
-    },
-  ];
-
-  const socialLinkItems = [
-    {
-      label: "twitter",
-      orderId: 1,
-    },
-    {
-      label: "linkedin",
-      orderId: 2,
-    },
-  ];
-
   return (
     <div className="l-page">
       <Head>
@@ -63,21 +30,7 @@ export default function Home() {
       </Head>
 
       <header className="l-page_header">
-        <article className="c-header">
-          <h1 className="c-header_title">
-            Seak <TitleSlider items={titleSlideItems} />
-          </h1>
-
-          <p className="c-header_subtitle">
-            <span>UI</span> is my tool.
-            <br className="c-header_spacer" />
-            <span>UX</span> is my passion.
-          </p>
-
-          <div className="l-page_nav-position">
-            <BtnMenu />
-          </div>
-        </article>
+        <Header />
       </header>
 
       <main className="l-page_main">
@@ -85,7 +38,7 @@ export default function Home() {
           <nav className="c-main-navigation"></nav>
         </aside>
 
-        <section className="c-stage">
+        <Stage>
           <article className="c-stage_main">
             <Gallery items={mockGalleryItems} />
             <IntroArticle>
@@ -107,9 +60,9 @@ export default function Home() {
               </div>
             </div>
           </article>
-        </section>
+        </Stage>
 
-        <section className="c-stage">
+        <Stage>
           <article className="c-stage_header">
             <div className="c-section-title">
               <h2 className="c-section-title_heading">Contact</h2>
@@ -135,22 +88,20 @@ export default function Home() {
               <BtnSubmit icon="mail">Send</BtnSubmit>
             </form>
           </article>
-        </section>
+        </Stage>
       </main>
 
       <footer className="l-page_footer c-footer">
-        <section className="c-footer_copywrite">
-          Made with ♥ by Monde Sineke
-        </section>
-
-        <section className="c-footer_copywrite">
-          {socialLinkItems.map(({ name }) => (
-            <div className="c-social-icon" name={name} />
-          ))}
-        </section>
+        <Footer />
       </footer>
 
       <style jsx>{`
+        .l-page {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
+
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -160,8 +111,19 @@ export default function Home() {
       `}</style>
 
       <style jsx global>{`
+        :root {
+          --color-intent-bg: linear-gradient(
+              180deg,
+              rgba(129, 134, 140, 0.52) 0%,
+              rgba(57, 58, 63, 0.59) 25%,
+              #393a3f 100%
+            ),
+            #393a3f;
+        }
+
         html,
         body {
+          background: var(--color-intent-bg);
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
