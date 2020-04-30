@@ -1,136 +1,156 @@
 import Head from "next/head";
 
-export default function _Home() {
+import TitleSlider from "../components/displays/title-slider";
+import BtnMenu from "../components/user-inputs/buttons/menu";
+import BtnSubmit from "../components/user-inputs/buttons/submit";
+import BtnCTARound from "../components/user-inputs/buttons/cta-round";
+import BtnCTALandscape from "../components/user-inputs/buttons/cta-landscape";
+import Gallery from "../components/user-inputs/gallery";
+import IntroArticle from "../components/displays/intro-article";
+import InputField from "../components/user-inputs/input-fields/base";
+
+export default function Home() {
+  const mockGalleryItems = [
+    {
+      title: "Theroyatsela",
+      orderId: "",
+      image: {
+        url: "",
+      },
+      linkUrl: "",
+    },
+  ];
+
+  const titleSlideItems = [
+    {
+      title: "Digital",
+      orderId: 1,
+    },
+    {
+      title: "Design",
+      orderId: 2,
+    },
+    {
+      title: "Dev",
+      orderId: 3,
+    },
+    {
+      title: "Dj",
+      orderId: 4,
+    },
+    {
+      title: "Photo",
+      orderId: 5,
+    },
+  ];
+
+  const socialLinkItems = [
+    {
+      label: "twitter",
+      orderId: 1,
+    },
+    {
+      label: "linkedin",
+      orderId: 2,
+    },
+  ];
+
   return (
-    <div className="container">
+    <div className="l-page">
       <Head>
-        <title>Seak digital website</title>
+        <title>Seak Digital</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">Monde sineke is seak digital</h1>
+      <header className="l-page_header">
+        <article className="c-header">
+          <h1 className="c-header_title">
+            Seak <TitleSlider items={titleSlideItems} />
+          </h1>
+
+          <p className="c-header_subtitle">
+            <span>UI</span> is my tool.
+            <br className="c-header_spacer" />
+            <span>UX</span> is my passion.
+          </p>
+
+          <div className="l-page_nav-position">
+            <BtnMenu />
+          </div>
+        </article>
+      </header>
+
+      <main className="l-page_main">
+        <aside className="c-offcanvas">
+          <nav className="c-main-navigation"></nav>
+        </aside>
+
+        <section className="c-stage">
+          <article className="c-stage_main">
+            <Gallery items={mockGalleryItems} />
+            <IntroArticle>
+              <h3>About Me</h3>
+              <p className="c-intro-article_description">
+                In a time long ago, before the div tag and Flash ruled the
+                web...
+              </p>
+
+              <BtnCTARound kind="text" mode="primary" icon="angle-down">
+                Read More
+              </BtnCTARound>
+            </IntroArticle>
+
+            <div className="l-page_divider">
+              <div className="c-button-group">
+                <BtnCTARound kind="icon" mode="inverse" />
+                <BtnCTARound kind="icon" mode="secondary" />
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section className="c-stage">
+          <article className="c-stage_header">
+            <div className="c-section-title">
+              <h2 className="c-section-title_heading">Contact</h2>
+              <p className="c-section-title_subtitle">Let's chat</p>
+              <p className="c-section-title_description">
+                <a href="mailto:nsineke@gmail.com">nsineke@gmail.com</a>
+              </p>
+            </div>
+          </article>
+
+          <article className="c-stage_main">
+            <form>
+              <InputField name="e-mail" type="email" />
+              <BtnCTALandscape
+                kind="landscape"
+                mode="inverse"
+                priority="primary"
+                icon="mic"
+              >
+                Leave me a note
+              </BtnCTALandscape>
+              <InputField name="note" type="text" />
+              <BtnSubmit icon="mail">Send</BtnSubmit>
+            </form>
+          </article>
+        </section>
       </main>
 
+      <footer className="l-page_footer c-footer">
+        <section className="c-footer_copywrite">
+          Made with ♥ by Monde Sineke
+        </section>
+
+        <section className="c-footer_copywrite">
+          {socialLinkItems.map(({ name }) => (
+            <div className="c-social-icon" name={name} />
+          ))}
+        </section>
+      </footer>
+
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
