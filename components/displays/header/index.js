@@ -2,43 +2,23 @@ import React from "react";
 
 import BtnMenu from "../../user-inputs/buttons/menu";
 import TitleSlider from "../../user-inputs/title-slider";
+import Container from "../container";
 
-import { Wrapper, Title, Subtitle, Spacer } from "./styled";
+import { Wrapper, Title, Subtitle, Spacer, SeakText, NameText } from "./styled";
 
-const titleSlideItems = [
-  {
-    title: "Digital",
-    orderId: 1,
-  },
-  {
-    title: "Design",
-    orderId: 2,
-  },
-  {
-    title: "Dev",
-    orderId: 3,
-  },
-  {
-    title: "Dj",
-    orderId: 4,
-  },
-  {
-    title: "Photo",
-    orderId: 5,
-  },
-];
-
-export const Header = ({ items = titleSlideItems, children }) => {
+export const Header = ({ children }) => {
   return (
     <Wrapper>
       <Title>
-        Seak <TitleSlider items={items} />
+        <SeakText>Seak</SeakText> <TitleSlider />
       </Title>
 
       <Subtitle>
-        <span>UI</span> is my tool.
-        <br className="c-header_spacer" />
-        <span>UX</span> is my passion.
+        <Container>
+          <strong>UI</strong> is my tool.
+          <Spacer />
+          <strong>UX</strong> is my passion.<NameText>- Monde Sineke</NameText>
+        </Container>
       </Subtitle>
 
       <div className="l-page_nav-position">

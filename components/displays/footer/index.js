@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Wrapper, Copywright, IconLinkList } from "./styled";
+import { Wrapper, Copywright, IconLinkList, Item } from "./styled";
 
 const socialLinkItems = [
   {
@@ -20,7 +20,7 @@ export const Footer = ({ items = socialLinkItems, children }) => {
 
       <IconLinkList>
         {items.map(({ name }) => (
-          <div className="c-social-icon" key={name} name={name} />
+          <Item key={name} name={name} />
         ))}
       </IconLinkList>
     </Wrapper>

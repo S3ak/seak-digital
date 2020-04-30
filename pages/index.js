@@ -9,6 +9,7 @@ import InputField from "../components/user-inputs/input-fields/base";
 import Header from "../components/displays/header";
 import Stage from "../components/displays/stage";
 import Footer from "../components/displays/footer";
+import Container from "../components/displays/container";
 
 export default function Home() {
   const mockGalleryItems = [
@@ -38,57 +39,59 @@ export default function Home() {
           <nav className="c-main-navigation"></nav>
         </aside>
 
-        <Stage>
-          <article className="c-stage_main">
-            <Gallery items={mockGalleryItems} />
-            <IntroArticle>
-              <h3>About Me</h3>
-              <p className="c-intro-article_description">
-                In a time long ago, before the div tag and Flash ruled the
-                web...
-              </p>
+        <Container>
+          <Stage>
+            <article className="c-stage_main">
+              <Gallery items={mockGalleryItems} />
+              <IntroArticle>
+                <h3>About Me</h3>
+                <p className="c-intro-article_description">
+                  In a time long ago, before the div tag and Flash ruled the
+                  web...
+                </p>
 
-              <BtnCTARound kind="text" mode="primary" icon="angle-down">
-                Read More
-              </BtnCTARound>
-            </IntroArticle>
+                <BtnCTARound kind="text" mode="primary" icon="angle-down">
+                  Read More
+                </BtnCTARound>
+              </IntroArticle>
 
-            <div className="l-page_divider">
-              <div className="c-button-group">
-                <BtnCTARound kind="icon" mode="inverse" />
-                <BtnCTARound kind="icon" mode="secondary" />
+              <div className="l-page_divider">
+                <div className="c-button-group">
+                  <BtnCTARound kind="icon" mode="inverse" />
+                  <BtnCTARound kind="icon" mode="secondary" />
+                </div>
               </div>
-            </div>
-          </article>
-        </Stage>
+            </article>
+          </Stage>
 
-        <Stage>
-          <article className="c-stage_header">
-            <div className="c-section-title">
-              <h2 className="c-section-title_heading">Contact</h2>
-              <p className="c-section-title_subtitle">Let's chat</p>
-              <p className="c-section-title_description">
-                <a href="mailto:nsineke@gmail.com">nsineke@gmail.com</a>
-              </p>
-            </div>
-          </article>
+          <Stage>
+            <article className="c-stage_header">
+              <div className="c-section-title">
+                <h2 className="c-section-title_heading">Contact</h2>
+                <p className="c-section-title_subtitle">Let's chat</p>
+                <p className="c-section-title_description">
+                  <a href="mailto:nsineke@gmail.com">nsineke@gmail.com</a>
+                </p>
+              </div>
+            </article>
 
-          <article className="c-stage_main">
-            <form>
-              <InputField name="e-mail" type="email" />
-              <BtnCTALandscape
-                kind="landscape"
-                mode="inverse"
-                priority="primary"
-                icon="mic"
-              >
-                Leave me a note
-              </BtnCTALandscape>
-              <InputField name="note" type="text" />
-              <BtnSubmit icon="mail">Send</BtnSubmit>
-            </form>
-          </article>
-        </Stage>
+            <article className="c-stage_main">
+              <form>
+                <InputField name="e-mail" type="email" />
+                <BtnCTALandscape
+                  kind="landscape"
+                  mode="inverse"
+                  priority="primary"
+                  icon="mic"
+                >
+                  Leave me a note
+                </BtnCTALandscape>
+                <InputField name="note" type="text" />
+                <BtnSubmit icon="mail">Send</BtnSubmit>
+              </form>
+            </article>
+          </Stage>
+        </Container>
       </main>
 
       <footer className="l-page_footer c-footer">
@@ -119,6 +122,14 @@ export default function Home() {
               #393a3f 100%
             ),
             #393a3f;
+
+          --color-intent-text: #fff;
+
+          --size-global-horizontal-bleed: 20px;
+        }
+
+        html {
+          scroll-behavior: smooth;
         }
 
         html,
@@ -129,6 +140,16 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          height: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 0;
         }
 
         * {
