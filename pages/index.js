@@ -11,6 +11,8 @@ import Stage from "../components/displays/stage";
 import Footer from "../components/displays/footer";
 import Container from "../components/displays/container";
 
+import { GallerySection, IntroSection } from "./styled";
+
 export default function Home() {
   const mockGalleryItems = [
     {
@@ -30,30 +32,34 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="l-page_header">
-        <Header />
-      </header>
+      <header className="l-page_header"></header>
 
       <main className="l-page_main">
         <aside className="c-offcanvas">
           <nav className="c-main-navigation"></nav>
         </aside>
 
-        <Container>
-          <Stage>
+        <Stage>
+          <Header />
+          <Container>
             <article className="c-stage_main">
-              <Gallery items={mockGalleryItems} />
-              <IntroArticle>
-                <h3>About Me</h3>
-                <p className="c-intro-article_description">
-                  In a time long ago, before the div tag and Flash ruled the
-                  web...
-                </p>
+              <GallerySection>
+                <Gallery items={mockGalleryItems} />
+              </GallerySection>
 
-                <BtnCTARound kind="text" mode="primary" icon="angle-down">
-                  Read More
-                </BtnCTARound>
-              </IntroArticle>
+              <IntroSection>
+                <IntroArticle>
+                  <h3>About Me</h3>
+                  <p className="c-intro-article_description">
+                    In a time long ago, before the div tag and Flash ruled the
+                    web...
+                  </p>
+
+                  <BtnCTARound kind="text" mode="primary" icon="angle-down">
+                    Read More
+                  </BtnCTARound>
+                </IntroArticle>
+              </IntroSection>
 
               <div className="l-page_divider">
                 <div className="c-button-group">
@@ -62,9 +68,11 @@ export default function Home() {
                 </div>
               </div>
             </article>
-          </Stage>
+          </Container>
+        </Stage>
 
-          <Stage>
+        <Stage>
+          <Container>
             <article className="c-stage_header">
               <div className="c-section-title">
                 <h2 className="c-section-title_heading">Contact</h2>
@@ -90,8 +98,8 @@ export default function Home() {
                 <BtnSubmit icon="mail">Send</BtnSubmit>
               </form>
             </article>
-          </Stage>
-        </Container>
+          </Container>
+        </Stage>
       </main>
 
       <footer className="l-page_footer c-footer">
@@ -130,6 +138,11 @@ export default function Home() {
 
         html {
           scroll-behavior: smooth;
+          height: 100%;
+        }
+
+        body {
+          min-height: 100%;
         }
 
         html,
@@ -140,7 +153,6 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-          height: 100%;
         }
 
         h1,
