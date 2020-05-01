@@ -11,7 +11,10 @@ import Stage from "../components/displays/stage";
 import Footer from "../components/displays/footer";
 import Container from "../components/displays/container";
 
-import { GallerySection, IntroSection } from "./styled";
+import {
+  GallerySection,
+  IntroSection,
+} from "../components/scenes/home-page/styled";
 
 export default function Home() {
   const mockGalleryItems = [
