@@ -35,4 +35,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Learnings
 
-[Isomorphism vs unvisersal]h(ttps://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb)
+[Isomorphism vs unvisersal](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb)
