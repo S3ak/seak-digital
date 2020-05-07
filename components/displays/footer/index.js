@@ -19,8 +19,8 @@ export const Footer = ({ items = socialLinkItems, children }) => {
       <Copywright>Made with ♥ by Monde Sineke</Copywright>
 
       <IconLinkList>
-        {items.map(({ name }) => (
-          <Item key={name} name={name} />
+        {items.map(({ name }, orderId) => (
+          <Item key={orderId} name={name} />
         ))}
       </IconLinkList>
     </Wrapper>
