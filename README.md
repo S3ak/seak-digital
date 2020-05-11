@@ -5,11 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Resources
 
-[Production]()
-[Staging TBC]()
-[HiFi Wireframes](https://www.figma.com/file/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79)
-[LoFi Wireframes]()
-[Prototypes](https://www.figma.com/proto/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79&scaling=min-zoom)
+- [Production]()
+- [Staging TBC]()
+- [HiFi Wireframes](https://www.figma.com/file/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79)
+- [LoFi Wireframes]()
+- [Prototypes](https://www.figma.com/proto/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79&scaling=min-zoom)
 
 
 ## Getting Started
