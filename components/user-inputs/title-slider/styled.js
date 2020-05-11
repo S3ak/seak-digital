@@ -13,7 +13,7 @@ export const Wrapper = styled.span`
   text-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2),
     0px 24px 38px rgba(0, 0, 0, 0.14);
   overflow-y: visible;
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;

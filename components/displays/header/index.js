@@ -8,23 +8,23 @@ import { Wrapper, Title, Subtitle, Spacer, SeakText, NameText } from "./styled";
 
 export const Header = ({ children }) => {
   return (
-    <Wrapper>
-      <Title>
-        <SeakText>Seak</SeakText> <TitleSlider />
-      </Title>
+    <Container>
+      <Wrapper>
+        <Title>
+          <SeakText>Seak</SeakText> <TitleSlider />
+        </Title>
 
-      <Subtitle>
-        <Container>
+        <Subtitle>
           <strong>UI</strong> is my tool.
           <Spacer />
           <strong>UX</strong> is my passion.<NameText>- Monde Sineke</NameText>
-        </Container>
-      </Subtitle>
+        </Subtitle>
 
-      <div className="l-page_nav-position">
-        <BtnMenu />
-      </div>
-    </Wrapper>
+        <div className="l-page_nav-position">
+          <BtnMenu />
+        </div>
+      </Wrapper>
+    </Container>
   );
 };
 
