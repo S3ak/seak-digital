@@ -1,7 +1,26 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { switchProp, palette } from "styled-tools";
+
+import { buttonMixin } from "../base/styled";
+
+const defaultThemeMixin = css`
+  background: linear-gradient(
+      180deg,
+      rgba(129, 134, 140, 0.52) 0%,
+      rgba(57, 58, 63, 0.59) 25%,
+      #393a3f 100%
+    ),
+    #393a3f;
+`;
+
+const inverseThemeMixin = css`
+  background: #bdbdbd;
+  box-shadow: 5px 5px 10px rgba(197, 199, 206, 0.2),
+    -5px -5px 5px rgba(61, 67, 72, 0.1);
+`;
 
 export const Wrapper = styled.button`
-  width: 100%;
+  ${buttonMixin};
   border-radius: 100%;
   border: 0 solid transparent;
   outline: none;
@@ -21,6 +40,26 @@ export const Wrapper = styled.button`
     #393a3f;
   box-shadow: 5px 5px 10px rgba(30, 31, 34, 0.5),
     -5px -5px 5px rgba(61, 67, 72, 0.44);
+
+  ${switchProp("theme", {
+    default: defaultThemeMixin,
+    inverse: inverseThemeMixin,
+  })}
+
+  ${switchProp("priority", {
+    primary: css`
+      color: var(--color-primary);
+    `,
+    secondary: css`
+      color: var(--color-muted);
+    `,
+  })}
+`;
+
+const innerCircleInverseThemeMixin = css`
+  background: #dedede;
+  box-shadow: inset 2px 2px 4px rgba(213, 211, 211, 0.49),
+    inset -2px -2px 4px #c9c9c9;
 `;
 
 export const InnerCircle = styled.div`
@@ -35,4 +74,8 @@ export const InnerCircle = styled.div`
   align-items: center;
   background: #393a3f;
   box-shadow: inset 2px 2px 4px #3c4249, inset -2px -2px 4px #1f1f22;
+
+  ${switchProp("theme", {
+    inverse: innerCircleInverseThemeMixin,
+  })}
 `;
