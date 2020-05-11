@@ -1,26 +1,27 @@
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
 
 import { Wrapper, Copywright, IconLinkList, Item } from "./styled";
 
 const socialLinkItems = [
   {
-    label: "twitter",
-    orderId: 1,
-  },
-  {
     label: "linkedin",
-    orderId: 2,
+    orderId: 1,
+    Icon: <FaLinkedin />,
+    href: "https://www.linkedin.com/in/nkululeko-monde-s-1620912b/",
   },
 ];
 
 export const Footer = ({ items = socialLinkItems, children }) => {
   return (
     <Wrapper>
-      <Copywright>Made with ♥ by Monde Sineke</Copywright>
+      <Copywright>Crafted with ♥ by Monde Sineke {children}</Copywright>
 
       <IconLinkList>
-        {items.map(({ name }, orderId) => (
-          <Item key={orderId} name={name} />
+        {items.map(({ label, Icon, href }, orderId) => (
+          <Item key={orderId} name={label} href={href}>
+            {Icon}
+          </Item>
         ))}
       </IconLinkList>
     </Wrapper>
