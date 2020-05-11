@@ -61,9 +61,9 @@ export default function Home() {
                     web...
                   </p>
 
-                  <LinkButton kind="text" theme="primary" icon="angle-down">
+                  {/* <LinkButton kind="text" theme="primary" icon="angle-down">
                     Read More
-                  </LinkButton>
+                  </LinkButton> */}
                 </IntroArticle>
               </IntroSection>
 
