@@ -21,20 +21,35 @@ export const LastButton = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  position: relative;
+  /* position: relative;
   min-width: 138px;
   max-width: 140px;
-  border-radius: 100%;
+  height: auto; */
+  /* width: 100%; */
+  /* border-radius: 100%; */
   border: 2px solid #202428;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-content: center;
-  overflow: hidden;
+  align-content: center; */
+  /* overflow: hidden; */
   background: linear-gradient(317.81deg, #202428 14.05%, #131314 85.29%);
   box-shadow: -20px -20px 70px #485057, 20px 20px 70px #141415;
 
+  width: 50%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+
   img {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    background: white;
   }
 `;
 
