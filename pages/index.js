@@ -70,20 +70,16 @@ export default function Home() {
               <div className="l-page_divider">
                 <div className="c-button-group">
                   <div className="c-button-group_item">
-                    <BtnCTARound kind="icon" theme="inverse" priority="primary">
-                      <FaAngleDown />
-                    </BtnCTARound>
-                  </div>
-
-                  <div className="c-button-group_item">
-                    <BtnCTARound
-                      kind="icon"
-                      theme="secondary"
-                      icon="angle-down"
-                      priority="secondary"
-                    >
-                      <FaGithub />
-                    </BtnCTARound>
+                    <Link href="//github.com/S3ak/seak-digital" passHref={true}>
+                      <BtnCTARound
+                        kind="icon"
+                        theme="secondary"
+                        icon="angle-down"
+                        priority="secondary"
+                      >
+                        <FaGithub />
+                      </BtnCTARound>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -18,6 +18,8 @@ export const Title = styled.h2`
   /* Elevation / Dialog */
   text-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2),
     0px 24px 38px rgba(0, 0, 0, 0.14);
+  margin: 0 auto;
+  max-width: 900px;
 `;
 
 export const Subtitle = styled.div`
