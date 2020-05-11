@@ -54,17 +54,7 @@ export default function Home() {
               </GallerySection>
 
               <IntroSection>
-                <IntroArticle>
-                  <h3>About Me</h3>
-                  <p className="c-intro-article_description">
-                    In a time long ago, before the div tag and Flash ruled the
-                    web...
-                  </p>
-
-                  {/* <LinkButton kind="text" theme="primary" icon="angle-down">
-                    Read More
-                  </LinkButton> */}
-                </IntroArticle>
+                <IntroArticle />
               </IntroSection>
 
               <div className="l-page_divider">
@@ -73,9 +63,8 @@ export default function Home() {
                     <Link href="//github.com/S3ak/seak-digital" passHref={true}>
                       <BtnCTARound
                         kind="icon"
-                        theme="secondary"
                         icon="angle-down"
-                        priority="secondary"
+                        priority="primary"
                       >
                         <FaGithub />
                       </BtnCTARound>

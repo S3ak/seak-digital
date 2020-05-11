@@ -13,9 +13,9 @@ export const IntroArticle = ({ children }) => {
         In a time long ago, before the div tag and Flash ruled the web...
       </Description>
 
-      <Button kind="text" mode="primary" Icon={<FaAngleDown />}>
+      {/* <Button kind="text" mode="primary" Icon={<FaAngleDown />}>
         Read More
-      </Button>
+      </Button> */}
     </Wrapper>
   );
 };
