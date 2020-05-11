@@ -1,180 +1,183 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { FaAngleDown, FaGithub } from "react-icons/fa";
+
+// import BtnSubmit from "../components/user-inputs/buttons/submit";
+import BtnCTARound from "../components/user-inputs/buttons/cta-round";
+import LinkButton from "../components/user-inputs/buttons/link";
+import Link from "../components/user-inputs/link";
+// import BtnCTALandscape from "../components/user-inputs/buttons/cta-landscape";
+import Gallery from "../components/user-inputs/gallery";
+import IntroArticle from "../components/displays/intro-article";
+// import InputField from "../components/user-inputs/input-fields/base";
+import Header from "../components/displays/header";
+import Stage from "../components/displays/stage";
+import Footer from "../components/displays/footer";
+import Container from "../components/displays/container";
+
+import {
+  GallerySection,
+  IntroSection,
+} from "../components/scenes/home-page/styled";
 
 export default function Home() {
+  const mockGalleryItems = [
+    {
+      title: "Theroyatsela",
+      orderId: "",
+      image: {
+        url: "",
+      },
+      linkUrl: "",
+    },
+  ];
+
   return (
-    <div className="container">
+    <div className="l-page">
       <Head>
-        <title>Create Next App</title>
+        <title>Seak Digital</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header className="l-page_header"></header>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+      <main className="l-page_main">
+        <aside className="c-offcanvas">
+          <nav className="c-main-navigation"></nav>
+        </aside>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <Stage>
+          <Header />
+          <Container>
+            <article className="c-stage_main">
+              <GallerySection>
+                <Gallery items={mockGalleryItems} />
+              </GallerySection>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+              <IntroSection>
+                <IntroArticle />
+              </IntroSection>
 
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+              <div className="l-page_divider">
+                <div className="c-button-group">
+                  <div className="c-button-group_item">
+                    <Link href="//github.com/S3ak/seak-digital" passHref={true}>
+                      <BtnCTARound
+                        kind="icon"
+                        icon="angle-down"
+                        priority="primary"
+                      >
+                        <FaGithub />
+                      </BtnCTARound>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </Container>
+        </Stage>
 
-          <a
-            href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with ZEIT Now.
-            </p>
-          </a>
-        </div>
+        <Stage hasTopOffset isInverse>
+          <Container>
+            <article className="c-stage_header">
+              <div className="c-section-heading">
+                <div className="c-section-heading_first-row">
+                  <h2 className="c-section-heading_title">
+                    Con
+                    <br />
+                    tact
+                  </h2>
+
+                  <p className="c-section-heading_subtitle">Let's chat</p>
+                </div>
+
+                <p className="c-section-heading_description">
+                  <Link href="mailto:nsineke@gmail.com">nsineke@gmail.com</Link>
+                </p>
+              </div>
+            </article>
+          </Container>
+        </Stage>
       </main>
 
-      <footer>
-        <a
-          href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-        </a>
+      <footer className="l-page_footer c-footer">
+        <Footer />
       </footer>
 
       <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
+        .l-page {
           width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
+          height: 100vh;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: 0 1fr auto;
+          align-content: stretch;
+          grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        }
+
+        .l-page_header {
+          grid-area: header;
+          height: 0;
+        }
+
+        .l-page_main {
+          grid-area: main;
+          overflow: auto;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          flex-direction: column;
         }
 
-        footer img {
-          margin-left: 0.5rem;
+        .l-page_footer {
+          grid-area: footer;
         }
 
-        footer a {
+        .l-page_divider {
+          margin-bottom: -23px;
+        }
+
+        .c-button-group {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: flex-end;
         }
 
-        a {
-          color: inherit;
-          text-decoration: none;
+        .c-button-group_item:first-child {
+          padding-right: 20px;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
+        .c-section-title {
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
+        .c-section-heading_first-row {
           display: flex;
-          align-items: center;
-          justify-content: center;
+          align-items: flex-end;
           flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
         }
 
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+        .c-section-heading_title {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 91px;
+          line-height: 73.19%;
+          /* or 67px */
+
+          font-variant: small-caps;
+          font-feature-settings: "cpsp" on;
+
+          /* Seak palette - Accent */
+
+          color: #ad9643;
+          /* Elevation / Dialog */
+
+          text-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2),
+            0px 24px 38px rgba(0, 0, 0, 0.14);
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
+        .c-section-heading_description {
+          padding-top: 20px;
+          color: var(--color-primary);
         }
 
         @media (max-width: 600px) {
@@ -186,8 +189,35 @@ export default function Home() {
       `}</style>
 
       <style jsx global>{`
+        :root {
+          --color-intent-bg: linear-gradient(
+              180deg,
+              rgba(129, 134, 140, 0.52) 0%,
+              rgba(57, 58, 63, 0.59) 25%,
+              #393a3f 100%
+            ),
+            #393a3f;
+
+          --color-intent-text: #fff;
+
+          --size-global-horizontal-bleed: 20px;
+
+          --color-primary: #ee4b0e;
+          --color-muted: #bdbdbd;
+        }
+
+        html {
+          scroll-behavior: smooth;
+          height: 100%;
+        }
+
+        body {
+          min-height: 100%;
+        }
+
         html,
         body {
+          background: var(--color-intent-bg);
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
@@ -195,10 +225,28 @@ export default function Home() {
             sans-serif;
         }
 
+        footer {
+          grid
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+          margin: 0;
+        }
+
+        a {
+          color: var(--color-primary);
+        }
+
         * {
           box-sizing: border-box;
         }
       `}</style>
     </div>
-  )
+  );
 }
