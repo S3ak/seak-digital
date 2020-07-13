@@ -2,12 +2,12 @@ import React from "react";
 import { withKnobs } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 
-import { GenericComponent } from "./index";
+import { BtnText } from "./index";
 import componentNotes from "./read-me.md";
 
 export default {
-  title: "Generic/Component",
-  component: GenericComponent,
+  title: "User-inputs/buttons/text button",
+  component: BtnText,
   decorators: [withKnobs],
   parameters: { notes: componentNotes },
 };

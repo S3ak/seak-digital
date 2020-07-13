@@ -26,7 +26,7 @@ export const GenericComponent = ({ children, handleOnAction }) => {
 };
 
 GenericComponent.propTypes = {
-  children: PT.children,
+  children: PT.node,
   handleOnAction: PT.func,
 };
 
