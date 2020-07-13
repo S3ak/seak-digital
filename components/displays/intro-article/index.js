@@ -10,7 +10,10 @@ export const IntroArticle = ({ children }) => {
     <Wrapper>
       <Title>About Me</Title>
       <Description>
-        In a time long ago, before the div tag and Flash ruled the web...
+        Yo, I’m Monde Sineke and I ❤ design. A Multimedia Designer from Mzansi,
+        currently working in Cape Town. Interested in working together? Feel
+        free to contact me for any project or collaboration. I’ve worked on
+        projects for Yoco, SameWave, Nomanini…
       </Description>
 
       {/* <Button kind="text" mode="primary" Icon={<FaAngleDown />}>
