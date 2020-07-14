@@ -6,14 +6,14 @@ import { Accordion } from "./index";
 import componentNotes from "./read-me.md";
 
 export default {
-  title: "Generic/Component",
+  title: "User-inputs/Accordion",
   component: Accordion,
   decorators: [withKnobs],
   parameters: { notes: componentNotes },
 };
 
-export const Skeleton = () => <GenericComponent initIsLoading />;
+export const Skeleton = () => <Accordion />;
 
 export const Base = () => (
-  <GenericComponent handleOnAction={action("clicked")}>Text</GenericComponent>
+  <Accordion handleOnAction={action("clicked")}>Text</Accordion>
 );
