@@ -1,6 +1,6 @@
 {
   "name": "seak-digital",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:update": "npm test -- -u",
-    "update:packages": "npx npm-check -u"
+    "update:packages": "npx npm-check -u",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "next": "^9.4.4",
@@ -36,12 +37,17 @@
     "husky": "^4.2.5",
     "jest": "^24.9.0",
     "polished": "^3.6.5",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "semantic-release": "^17.1.1"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
       "pre-push": "npm test"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S3ak/seak-digital.git"
   }
 }
