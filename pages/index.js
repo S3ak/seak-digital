@@ -8,7 +8,6 @@ import Link from "../components/user-inputs/link";
 // import BtnCTALandscape from "../components/user-inputs/buttons/cta-landscape";
 import Gallery from "../components/user-inputs/gallery";
 import IntroArticle from "../components/displays/intro-article";
-// import InputField from "../components/user-inputs/input-fields/base";
 
 import Stage from "../components/displays/stage";
 import Container from "../components/displays/container";
