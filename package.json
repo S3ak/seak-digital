@@ -12,7 +12,8 @@
     "test:watch": "jest --watch",
     "test:update": "npm test -- -u",
     "update:packages": "npx npm-check -u",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "npx git-cz"
   },
   "dependencies": {
     "next": "^9.4.4",
