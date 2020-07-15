@@ -9,28 +9,28 @@ import Link from "../components/user-inputs/link";
 import Gallery from "../components/user-inputs/gallery";
 import IntroArticle from "../components/displays/intro-article";
 // import InputField from "../components/user-inputs/input-fields/base";
-import Header from "../components/displays/header";
+
 import Stage from "../components/displays/stage";
-import Footer from "../components/displays/footer";
 import Container from "../components/displays/container";
-import ConnectedBaseScene from "../components/scenes/base";
+import Section from "../components/displays/section";
+import ButtonGroup from "../components/user-inputs/button-group";
+import ButtonGroupItem from "../components/user-inputs/button-group/item";
+
+import { mockGalleryItems } from "./../lib/states/gallery/mockGalleryItems";
 
 import {
   GallerySection,
   IntroSection,
 } from "../components/scenes/home-page/styled";
 
+const H2Content = () => (
+  <>
+    Con <br /> tact
+  </>
+);
+
 export default function Home() {
-  const mockGalleryItems = [
-    {
-      title: "Theroyatsela",
-      orderId: "",
-      image: {
-        url: "",
-      },
-      linkUrl: "",
-    },
-  ];
+  const galleryItems = mockGalleryItems || [];
 
   return (
     <BaseLayout>
@@ -40,59 +40,45 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ConnectedBaseScene></ConnectedBaseScene>
+      <div>
+        <Stage>
+          <Container>
+            <article className="c-stage_main">
+              <GallerySection>
+                <Gallery items={galleryItems} />
+              </GallerySection>
 
-      <style jsx>{`
-        .c-button-group {
-          display: flex;
-          justify-content: flex-end;
-        }
+              <IntroSection>
+                <IntroArticle />
+              </IntroSection>
 
-        .c-button-group_item:first-child {
-          padding-right: 20px;
-        }
+              <div className="l-page_divider">
+                <ButtonGroup>
+                  <ButtonGroupItem>
+                    <Link href="//github.com/S3ak/seak-digital" passHref={true}>
+                      <BtnCTARound
+                        kind="icon"
+                        icon="angle-down"
+                        priority="primary"
+                      >
+                        <FaGithub />
+                      </BtnCTARound>
+                    </Link>
+                  </ButtonGroupItem>
+                </ButtonGroup>
+              </div>
+            </article>
+          </Container>
+        </Stage>
 
-        .c-section-title {
-        }
-
-        .c-section-heading_first-row {
-          display: flex;
-          align-items: flex-end;
-          flex-wrap: wrap;
-        }
-
-        .c-section-heading_title {
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: 900;
-          font-size: 91px;
-          line-height: 73.19%;
-          /* or 67px */
-
-          font-variant: small-caps;
-          font-feature-settings: "cpsp" on;
-
-          /* Seak palette - Accent */
-
-          color: #ad9643;
-          /* Elevation / Dialog */
-
-          text-shadow: 0px 11px 15px rgba(0, 0, 0, 0.2),
-            0px 24px 38px rgba(0, 0, 0, 0.14);
-        }
-
-        .c-section-heading_description {
-          padding-top: 20px;
-          color: var(--color-primary);
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-    </div>
+        <Stage hasTopOffset isInverse>
+          <Container>
+            <Section h2Content={<H2Content />} subtitle="Let's chat">
+              <Link href="mailto:nsineke@gmail.com">nsineke@gmail.com</Link>
+            </Section>
+          </Container>
+        </Stage>
+      </div>
+    </BaseLayout>
   );
 }

@@ -4,7 +4,7 @@ import { Wrapper } from "./styled";
 
 import Skeleton from "./Skeleton";
 
-export const Footer = ({ children }) => {
+export const GenericComponent = ({ children }) => {
   const [isLoading] = useState(false);
   const [isError] = useState(false);
 
@@ -19,8 +19,8 @@ export const Footer = ({ children }) => {
   return <Wrapper>{children}</Wrapper>;
 };
 
-Footer.propTypes = {
+GenericComponent.propTypes = {
   children: PT.node,
 };
 
-export default Footer;
+export default GenericComponent;

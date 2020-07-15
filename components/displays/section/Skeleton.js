@@ -5,7 +5,7 @@ const Placeholder = () => <div>grey</div>;
 
 export const Skeleton = () => (
   <Wrapper>
-    <Placeholder />
+      <Placeholder />
   </Wrapper>
 );
 

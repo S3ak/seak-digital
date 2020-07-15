@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PT from "prop-types";
-
 import { Wrapper } from "./styled";
+
 import Skeleton from "./Skeleton";
 
-export const Header = ({ children }) => {
+export const GenericComponent = ({ children }) => {
   const [isLoading] = useState(false);
   const [isError] = useState(false);
 
@@ -19,8 +19,8 @@ export const Header = ({ children }) => {
   return <Wrapper>{children}</Wrapper>;
 };
 
-Header.propTypes = {
+GenericComponent.propTypes = {
   children: PT.node,
 };
 
-export default Header;
+export default GenericComponent;

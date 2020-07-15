@@ -1,17 +1,25 @@
 import React from "react";
 import PT from "prop-types";
+import { ThemeProvider } from "styled-components";
+
 import { Layout, HeaderSection, MainSection, FooterSection } from "./styled";
 
-import Header from '../../scenes/header';
-import Footer from '../../scenes/footer';
-import Stage from '../../displays/stage';
+import Header from "../../displays/header";
+import Footer from "../../displays/footer";
+import Stage from "../../displays/stage";
 
-export const BaseLayout = ({ children, headerContent, footerContent }) => {
+import theme from "../../../utils/styles/baseTheme";
+
+export const BaseLayout = ({
+  children,
+  HeaderContent = Header,
+  FooterContent = Footer,
+}) => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
         <HeaderSection className="l-page_header">
-          <Header />
+          <HeaderContent />
         </HeaderSection>
 
         <MainSection>
@@ -19,13 +27,11 @@ export const BaseLayout = ({ children, headerContent, footerContent }) => {
             <nav className="c-main-navigation"></nav>
           </aside>
 
-          <Stage>
-            {children}
-          </Stage>
+          <Stage>{children}</Stage>
         </MainSection>
 
         <FooterSection className="l-page_footer c-footer">
-          <Footer />
+          <FooterContent />
         </FooterSection>
       </Layout>
     </ThemeProvider>
@@ -34,7 +40,8 @@ export const BaseLayout = ({ children, headerContent, footerContent }) => {
 
 BaseLayout.propTypes = {
   children: PT.node,
-  handleOnAction: PT.func,
+  HeaderContent: PT.node,
+  FooterContent: PT.node,
 };
 
 export default BaseLayout;
