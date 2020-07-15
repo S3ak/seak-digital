@@ -5,7 +5,7 @@ import { withKnobs, select } from "@storybook/addon-knobs";
 import { CTARound } from "./index";
 
 export default {
-  title: "buttons/cta",
+  title: "buttons/cta(deprecaited)",
   component: CTARound,
   decorators: [withKnobs],
 };
