@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import PT from "prop-types";
-import { Wrapper, Header, Body, Footer } from "./styled";
+import { Wrapper } from "./styled";
 
 import Skeleton from "./Skeleton";
 
-export const GenericComponent = ({ children, handleOnAction }) => {
+export const GenericComponent = ({ children }) => {
   const [isLoading] = useState(false);
   const [isError] = useState(false);
 
@@ -16,18 +16,11 @@ export const GenericComponent = ({ children, handleOnAction }) => {
     return <div>Something went wrong</div>;
   }
 
-  return (
-    <Wrapper onClick={handleOnAction}>
-      <Header>head</Header>
-      <Body>{children}</Body>
-      <Footer>foot</Footer>
-    </Wrapper>
-  );
+  return <Wrapper>{children}</Wrapper>;
 };
 
 GenericComponent.propTypes = {
   children: PT.node,
-  handleOnAction: PT.func,
 };
 
 export default GenericComponent;

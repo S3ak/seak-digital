@@ -13,7 +13,7 @@ import Header from "../components/displays/header";
 import Stage from "../components/displays/stage";
 import Footer from "../components/displays/footer";
 import Container from "../components/displays/container";
-import ConnectedBaseScene from "../components/scenes/container";
+import ConnectedBaseScene from "../components/scenes/base";
 
 import {
   GallerySection,
@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="l-page">
+    <BaseLayout>
       {/* TODO: Change to layout */}
       <Head>
         <title>Seak Digital</title>
@@ -43,39 +43,6 @@ export default function Home() {
       <ConnectedBaseScene></ConnectedBaseScene>
 
       <style jsx>{`
-        .l-page {
-          width: 100%;
-          height: 100vh;
-          display: grid;
-          grid-template-columns: auto;
-          grid-template-rows: 0 1fr auto;
-          align-content: stretch;
-          grid-template-areas:
-            "header"
-            "main"
-            "footer";
-        }
-
-        .l-page_header {
-          grid-area: header;
-          height: 0;
-        }
-
-        .l-page_main {
-          grid-area: main;
-          overflow: auto;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .l-page_footer {
-          grid-area: footer;
-        }
-
-        .l-page_divider {
-          margin-bottom: -23px;
-        }
-
         .c-button-group {
           display: flex;
           justify-content: flex-end;
@@ -124,66 +91,6 @@ export default function Home() {
             width: 100%;
             flex-direction: column;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        :root {
-          --color-intent-bg: linear-gradient(
-              180deg,
-              rgba(129, 134, 140, 0.52) 0%,
-              rgba(57, 58, 63, 0.59) 25%,
-              #393a3f 100%
-            ),
-            #393a3f;
-
-          --color-intent-text: #fff;
-
-          --size-global-horizontal-bleed: 20px;
-
-          --color-primary: #ee4b0e;
-          --color-muted: #bdbdbd;
-        }
-
-        html {
-          scroll-behavior: smooth;
-          height: 100%;
-        }
-
-        body {
-          min-height: 100%;
-        }
-
-        html,
-        body {
-          background: var(--color-intent-bg);
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        footer {
-          grid
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p {
-          margin: 0;
-        }
-
-        a {
-          color: var(--color-primary);
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
