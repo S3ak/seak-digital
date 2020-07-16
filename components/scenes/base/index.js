@@ -1,6 +1,6 @@
 import React from "react";
 
-const BaseScene = ({}) => {
+const BaseScene = () => {
   return <div>placeholder</div>;
 };
 
