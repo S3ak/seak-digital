@@ -17,10 +17,12 @@ import ButtonGroupItem from "../components/user-inputs/button-group/item";
 
 import { mockGalleryItems } from "./../lib/states/gallery/mockGalleryItems";
 
+import BaseLayout from "../components/layouts/base";
+
 import {
   GallerySection,
   IntroSection,
-} from "../components/scenes/home-page/styled";
+} from "../components/layouts/home/styled";
 
 const H2Content = () => (
   <>

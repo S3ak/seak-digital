@@ -42,6 +42,9 @@ export const Section = ({ children, h2Content, subtitle }) => {
 Section.propTypes = {
   children: PT.node,
   h2Content: PT.node,
+  /**
+    Describing the component
+    */
   subtitle: PT.node,
 };
 

@@ -63,3 +63,7 @@ export const SectionTitle = styled.h2`
     0px 24px 38px rgba(0, 0, 0, 0.14);
   font-size: 12px;
 `;
+
+export const ItemWrapper = styled.div`
+  width: 100%;
+`;
