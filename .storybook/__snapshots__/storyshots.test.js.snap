@@ -1,5 +1,161 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Displays/Header Header story 1`] = `
+<div>
+  <div />
+  <article
+    className="styled__Wrapper-sc-1u0icqr-0 PIdha"
+  >
+    <h2
+      className="styled__Title-sc-1u0icqr-1 fzvYPJ"
+    >
+      <span
+        className="styled__SeakText-sc-1u0icqr-4 cqrOIt"
+      >
+        Seak
+      </span>
+       
+      <span
+        className="styled__Wrapper-sc-1xxa21z-0 irNccR"
+      >
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Digital
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Design
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dev
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dj
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Photo
+        </span>
+      </span>
+    </h2>
+    <div
+      className="styled__Subtitle-sc-1u0icqr-2 dVMlFb"
+    >
+      <div
+        className="styled__Wrapper-sc-1h3m363-0 dHRQSC"
+      >
+        <strong>
+          UI
+        </strong>
+         is my tool.
+        <span
+          className="styled__Spacer-sc-1u0icqr-3 fIoCGZ"
+        />
+        <strong>
+          UX
+        </strong>
+         is my passion.
+        <span
+          className="styled__NameText-sc-1u0icqr-5 loygbx"
+        >
+          - Monde Sineke
+        </span>
+      </div>
+    </div>
+    <div
+      className="styled__NavPosition-sc-1u0icqr-6 iKmWdG l-page_nav-position"
+    >
+      <span />
+    </div>
+  </article>
+</div>
+`;
+
+exports[`Storyshots Displays/Header Skeleton 1`] = `
+<div>
+  <div />
+  <article
+    className="styled__Wrapper-sc-1u0icqr-0 PIdha"
+  >
+    <h2
+      className="styled__Title-sc-1u0icqr-1 fzvYPJ"
+    >
+      <span
+        className="styled__SeakText-sc-1u0icqr-4 cqrOIt"
+      >
+        Seak
+      </span>
+       
+      <span
+        className="styled__Wrapper-sc-1xxa21z-0 irNccR"
+      >
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Digital
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Design
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dev
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dj
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Photo
+        </span>
+      </span>
+    </h2>
+    <div
+      className="styled__Subtitle-sc-1u0icqr-2 dVMlFb"
+    >
+      <div
+        className="styled__Wrapper-sc-1h3m363-0 dHRQSC"
+      >
+        <strong>
+          UI
+        </strong>
+         is my tool.
+        <span
+          className="styled__Spacer-sc-1u0icqr-3 fIoCGZ"
+        />
+        <strong>
+          UX
+        </strong>
+         is my passion.
+        <span
+          className="styled__NameText-sc-1u0icqr-5 loygbx"
+        >
+          - Monde Sineke
+        </span>
+      </div>
+    </div>
+    <div
+      className="styled__NavPosition-sc-1u0icqr-6 iKmWdG l-page_nav-position"
+    >
+      <span />
+    </div>
+  </article>
+</div>
+`;
+
 exports[`Storyshots Displays/Section Base 1`] = `
 <div>
   <div />

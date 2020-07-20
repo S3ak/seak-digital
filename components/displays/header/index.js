@@ -1,12 +1,20 @@
-
 import React from "react";
 
 import BtnMenu from "../../user-inputs/buttons/menu";
 import TitleSlider from "../../user-inputs/title-slider";
 import Container from "../container";
 
-import { Wrapper, Title, Subtitle, Spacer, SeakText, NameText } from "./styled";
+import {
+  Wrapper,
+  Title,
+  Subtitle,
+  Spacer,
+  SeakText,
+  NameText,
+  NavPosition,
+} from "./styled";
 
+/* Header component used as global header for website. This contains the user navigation(hamburger) component */
 export const Header = ({ children }) => {
   return (
     <Wrapper>
@@ -22,9 +30,9 @@ export const Header = ({ children }) => {
         </Container>
       </Subtitle>
 
-      <div className="l-page_nav-position">
+      <NavPosition className="l-page_nav-position">
         <BtnMenu />
-      </div>
+      </NavPosition>
     </Wrapper>
   );
 };

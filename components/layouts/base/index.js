@@ -8,7 +8,7 @@ import Header from "../../displays/header";
 import Footer from "../../displays/footer";
 import Stage from "../../displays/stage";
 
-import theme from "../../../utils/styles/baseTheme";
+import theme from "../../../utils/styles/tokens";
 
 export const BaseLayout = ({
   children,
