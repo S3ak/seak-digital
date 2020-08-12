@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     upload: {
-      target: "temporary-public-storage",
+      target: ".next",
     },
     assert: {
       preset: "lighthouse:recommended",
