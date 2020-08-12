@@ -1,10 +1,7 @@
 module.exports = {
   ci: {
     upload: {
-      target: ".next",
-    },
-    assert: {
-      preset: "lighthouse:default",
+      target: ".build",
     },
     collect: {
       staticDistDir: "build",
