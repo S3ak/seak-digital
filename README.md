@@ -1,16 +1,18 @@
-THIS IS UNDER CONSTRUCTION
 
+Weclome to the source code for Monde Sineke's portfolio website. A brief to what this project is about can be found [here](https://docs.google.com/document/d/100fe3mbHhjDIVKOjI3wVmlO7jS0lwBtYtPIN4LMq5n8/edit?usp=sharing)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https:github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Resources
 
-- [Production]()
+- [Production](https://seakdigital.co.za/)
 - [Staging TBC]()
 - [HiFi Wireframes](https://www.figma.com/file/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79)
 - [LoFi Wireframes]()
 - [Prototypes](https://www.figma.com/proto/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79&scaling=min-zoom)
-
+- [Deployment console](https://vercel.com/seak/seak-digital)
+- [Content](https://docs.google.com/document/d/12y1-uK5pzEspuGQy7_c8HU18vBsoFCz4E1TWgP1HZ2Q/edit?usp=sharing)
+- [Performance Report]()
 
 ## Getting Started
 
