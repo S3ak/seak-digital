@@ -1,6 +1,15 @@
 name: CI
 on: [push]
 jobs:
+  test:
+    name: Run Jest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
+    - name: Run tests
+      run: npm test
   lhci:
     name: Lighthouse
     runs-on: ubuntu-latest
