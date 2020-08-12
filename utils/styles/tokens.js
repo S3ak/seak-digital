@@ -97,6 +97,6 @@ export const baseTheme = {
   borderRadius: "0.3em",
 };
 
-export default new DesignSystem(designTokens, {
+export default new DesignSystem(baseTheme, {
   fontSizeUnit: "rem",
 });
