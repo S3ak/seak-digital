@@ -4,7 +4,7 @@ module.exports = {
       target: ".next",
     },
     assert: {
-      preset: "lighthouse:recommended",
+      preset: "lighthouse:default",
     },
     collect: {
       staticDistDir: "build",
