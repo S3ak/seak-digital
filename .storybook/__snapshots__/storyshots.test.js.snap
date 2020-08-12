@@ -3,76 +3,509 @@
 exports[`Storyshots Displays/Header Header story 1`] = `
 <div>
   <div />
-  <story />
+  <article
+    className="styled__Wrapper-sc-1u0icqr-0 PIdha"
+  >
+    <h2
+      className="styled__Title-sc-1u0icqr-1 fzvYPJ"
+    >
+      <span
+        className="styled__SeakText-sc-1u0icqr-4 cqrOIt"
+      >
+        Seak
+      </span>
+       
+      <span
+        className="styled__Wrapper-sc-1xxa21z-0 irNccR"
+      >
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Digital
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Design
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dev
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dj
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Photo
+        </span>
+      </span>
+    </h2>
+    <div
+      className="styled__Subtitle-sc-1u0icqr-2 dVMlFb"
+    >
+      <div
+        className="styled__Wrapper-sc-1h3m363-0 dHRQSC"
+      >
+        <strong>
+          UI
+        </strong>
+         is my tool.
+        <span
+          className="styled__Spacer-sc-1u0icqr-3 fIoCGZ"
+        />
+        <strong>
+          UX
+        </strong>
+         is my passion.
+        <span
+          className="styled__NameText-sc-1u0icqr-5 loygbx"
+        >
+          - Monde Sineke
+        </span>
+      </div>
+    </div>
+    <div
+      className="styled__NavPosition-sc-1u0icqr-6 iKmWdG l-page_nav-position"
+    >
+      <span />
+    </div>
+  </article>
 </div>
 `;
 
 exports[`Storyshots Displays/Header Skeleton 1`] = `
 <div>
   <div />
-  <story />
+  <article
+    className="styled__Wrapper-sc-1u0icqr-0 PIdha"
+  >
+    <h2
+      className="styled__Title-sc-1u0icqr-1 fzvYPJ"
+    >
+      <span
+        className="styled__SeakText-sc-1u0icqr-4 cqrOIt"
+      >
+        Seak
+      </span>
+       
+      <span
+        className="styled__Wrapper-sc-1xxa21z-0 irNccR"
+      >
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Digital
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Design
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dev
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Dj
+        </span>
+        <span
+          className="styled__Item-sc-1xxa21z-1 dVyDle"
+        >
+          Photo
+        </span>
+      </span>
+    </h2>
+    <div
+      className="styled__Subtitle-sc-1u0icqr-2 dVMlFb"
+    >
+      <div
+        className="styled__Wrapper-sc-1h3m363-0 dHRQSC"
+      >
+        <strong>
+          UI
+        </strong>
+         is my tool.
+        <span
+          className="styled__Spacer-sc-1u0icqr-3 fIoCGZ"
+        />
+        <strong>
+          UX
+        </strong>
+         is my passion.
+        <span
+          className="styled__NameText-sc-1u0icqr-5 loygbx"
+        >
+          - Monde Sineke
+        </span>
+      </div>
+    </div>
+    <div
+      className="styled__NavPosition-sc-1u0icqr-6 iKmWdG l-page_nav-position"
+    >
+      <span />
+    </div>
+  </article>
 </div>
 `;
 
 exports[`Storyshots Displays/Section Base 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-txa7w1-0 gWWSGM"
+  >
+    <div
+      className="styled__SectionTitle-txa7w1-1 khXlpg"
+    >
+      <div
+        className="c-section-heading"
+      >
+        <div
+          className="styled__SectionHeadingFirstRow-txa7w1-2 fXwmwK"
+        >
+          <div
+            className="styled__SectionHeadingTitle-txa7w1-3 iwjaoX"
+          />
+          <p
+            className="c-section-heading_subtitle"
+          />
+        </div>
+        <div
+          className="styled__SectionHeadingDescription-txa7w1-4 iRRSKb"
+        >
+          Text
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
 exports[`Storyshots Displays/Section Skeleton 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-txa7w1-0 gWWSGM"
+  >
+    <div
+      className="styled__SectionTitle-txa7w1-1 khXlpg"
+    >
+      <div
+        className="c-section-heading"
+      >
+        <div
+          className="styled__SectionHeadingFirstRow-txa7w1-2 fXwmwK"
+        >
+          <div
+            className="styled__SectionHeadingTitle-txa7w1-3 iwjaoX"
+          />
+          <p
+            className="c-section-heading_subtitle"
+          />
+        </div>
+        <div
+          className="styled__SectionHeadingDescription-txa7w1-4 iRRSKb"
+        />
+      </div>
+    </div>
+  </section>
 </div>
 `;
 
 exports[`Storyshots Displays/Template Base 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-lhckts-0 kwnXEP"
+  >
+    Text
+  </section>
 </div>
 `;
 
 exports[`Storyshots Displays/Template Skeleton 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-lhckts-0 kwnXEP"
+  />
 </div>
 `;
 
 exports[`Storyshots User-inputs/Accordion Base 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-fibm1a-0 fajsWc"
+    id="some-selector"
+    onClick={[Function]}
+  >
+    <div
+      className="styled__Body-fibm1a-2 gHOMbF"
+    >
+      Text
+    </div>
+    <div
+      className="styled__Footer-fibm1a-3 ljHfkV"
+    >
+      <section
+        className="styled__Wrapper-nd8qqs-0 jImrvy"
+      >
+        More
+      </section>
+    </div>
+  </section>
 </div>
 `;
 
 exports[`Storyshots User-inputs/Accordion Skeleton 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-fibm1a-0 fajsWc"
+    id="some-selector"
+  >
+    <div
+      className="styled__Body-fibm1a-2 gHOMbF"
+    />
+    <div
+      className="styled__Footer-fibm1a-3 ljHfkV"
+    >
+      <section
+        className="styled__Wrapper-nd8qqs-0 jImrvy"
+      >
+        More
+      </section>
+    </div>
+  </section>
 </div>
 `;
 
 exports[`Storyshots User-inputs/buttons/text button Base 1`] = `
 <div>
   <div />
-  <story />
+  <section
+    className="styled__Wrapper-nd8qqs-0 jImrvy"
+    onClick={[Function]}
+  >
+    Text
+  </section>
 </div>
 `;
 
 exports[`Storyshots Welcome To Storybook 1`] = `
 <div>
   <div />
-  <story />
+  <article
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "color": "#000",
+        "fontFamily": "\\"Helvetica Neue\\", Helvetica, \\"Segoe UI\\", Arial, freesans, sans-serif",
+        "lineHeight": 1.4,
+        "padding": 15,
+      }
+    }
+  >
+    <h1>
+      Welcome to storybook
+    </h1>
+    <p>
+      This is a UI component dev environment for your app.
+    </p>
+    <p>
+      We've added some basic stories inside the 
+      <code
+        style={
+          Object {
+            "backgroundColor": "#f3f2f2",
+            "border": "1px solid #eae9e9",
+            "borderRadius": 4,
+            "color": "#3a3a3a",
+            "fontSize": 15,
+            "fontWeight": 600,
+            "padding": "2px 5px",
+          }
+        }
+      >
+        src/stories
+      </code>
+       directory.
+      <br />
+      A story is a single state of one or more UI components. You can have as many stories as you want.
+      <br />
+      (Basically a story is like a visual test case.)
+    </p>
+    <p>
+      See these sample 
+      <button
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderBottom": "1px solid #1474f3",
+            "borderLeft": "none",
+            "borderRight": "none",
+            "borderTop": "none",
+            "color": "#1474f3",
+            "cursor": "pointer",
+            "font": "inherit",
+            "padding": 0,
+            "paddingBottom": 2,
+            "textDecoration": "none",
+          }
+        }
+        type="button"
+      >
+        stories
+      </button>
+       for a component called 
+      <code
+        style={
+          Object {
+            "backgroundColor": "#f3f2f2",
+            "border": "1px solid #eae9e9",
+            "borderRadius": 4,
+            "color": "#3a3a3a",
+            "fontSize": 15,
+            "fontWeight": 600,
+            "padding": "2px 5px",
+          }
+        }
+      >
+        Button
+      </code>
+      .
+    </p>
+    <p>
+      Just like that, you can add your own components as stories.
+      <br />
+      You can also edit those components and see changes right away.
+      <br />
+      (Try editing the 
+      <code
+        style={
+          Object {
+            "backgroundColor": "#f3f2f2",
+            "border": "1px solid #eae9e9",
+            "borderRadius": 4,
+            "color": "#3a3a3a",
+            "fontSize": 15,
+            "fontWeight": 600,
+            "padding": "2px 5px",
+          }
+        }
+      >
+        Button
+      </code>
+       stories located at 
+      <code
+        style={
+          Object {
+            "backgroundColor": "#f3f2f2",
+            "border": "1px solid #eae9e9",
+            "borderRadius": 4,
+            "color": "#3a3a3a",
+            "fontSize": 15,
+            "fontWeight": 600,
+            "padding": "2px 5px",
+          }
+        }
+      >
+        src/stories/1-Button.stories.js
+      </code>
+      .)
+    </p>
+    <p>
+      Usually we create stories with smaller UI components in the app.
+      <br />
+      Have a look at the 
+      <a
+        href="https://storybook.js.org/basics/writing-stories"
+        rel="noopener noreferrer"
+        style={
+          Object {
+            "borderBottom": "1px solid #1474f3",
+            "color": "#1474f3",
+            "paddingBottom": 2,
+            "textDecoration": "none",
+          }
+        }
+        target="_blank"
+      >
+        Writing Stories
+      </a>
+       section in our documentation.
+    </p>
+    <p
+      style={
+        Object {
+          "opacity": 0.5,
+        }
+      }
+    >
+      <b>
+        NOTE:
+      </b>
+      <br />
+      Have a look at the 
+      <code
+        style={
+          Object {
+            "backgroundColor": "#f3f2f2",
+            "border": "1px solid #eae9e9",
+            "borderRadius": 4,
+            "color": "#3a3a3a",
+            "fontSize": 15,
+            "fontWeight": 600,
+            "padding": "2px 5px",
+          }
+        }
+      >
+        .storybook/webpack.config.js
+      </code>
+       to add webpack loaders and plugins you are using in this project.
+    </p>
+  </article>
 </div>
 `;
 
 exports[`Storyshots user-inputs/buttons/cta Button 1`] = `
 <div>
   <div />
-  <story />
+  <button
+    className="styled__Wrapper-ybszns-0 jdygxV"
+  >
+    <div
+      className="styled__InnerCircle-ybszns-1 jkWIUk"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 320 512"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+        />
+      </svg>
+    </div>
+  </button>
 </div>
 `;
