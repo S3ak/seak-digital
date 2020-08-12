@@ -2,9 +2,9 @@ import React from "react";
 import { addDecorator } from "@storybook/react";
 import WithGlobalStyles from "../utils/storybook-decorators/with-global-styles";
 
-addDecorator((storyFn) => (
+addDecorator((story) => (
   <div>
     <WithGlobalStyles />
-    {storyFn()}
+    <story />
   </div>
 ));
