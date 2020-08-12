@@ -6,5 +6,8 @@ module.exports = {
     assert: {
       preset: "lighthouse:recommended",
     },
+    collect: {
+      staticDistDir: "./out/",
+    },
   },
 };
