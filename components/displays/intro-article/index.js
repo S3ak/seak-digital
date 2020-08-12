@@ -1,21 +1,22 @@
-import React from "react";
-import { FaAngleDown } from "react-icons/fa";
+import React, { useState } from "react";
 
-import Button from "../../user-inputs/buttons/base";
+import Accordion from "../../user-inputs/accordion";
 
 import { Wrapper, Title, Description } from "./styled";
 
 export const IntroArticle = ({ children }) => {
+  const [isExpandedContentVisible] = useState(false);
   return (
     <Wrapper>
       <Title>About Me</Title>
       <Description>
-        In a time long ago, before the div tag and Flash ruled the web...
+        <Accordion>
+          Yo, I’m Monde Sineke and I ❤ design. A Multimedia Designer from
+          Mzansi, currently working in Cape Town. Interested in working
+          together? Feel free to contact me for any project or collaboration.
+          I’ve worked on projects for Yoco, SameWave, Nomanini…
+        </Accordion>
       </Description>
-
-      {/* <Button kind="text" mode="primary" Icon={<FaAngleDown />}>
-        Read More
-      </Button> */}
     </Wrapper>
   );
 };

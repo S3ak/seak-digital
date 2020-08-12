@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Displays/Header Header story 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots Displays/Header Skeleton 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots Displays/Section Base 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots Displays/Section Skeleton 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots Displays/Template Base 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots Displays/Template Skeleton 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots User-inputs/Accordion Base 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots User-inputs/Accordion Skeleton 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots User-inputs/buttons/text button Base 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots Welcome To Storybook 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;
+
+exports[`Storyshots user-inputs/buttons/cta Button 1`] = `
+<div>
+  <div />
+  <story />
+</div>
+`;

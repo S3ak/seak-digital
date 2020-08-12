@@ -44,3 +44,7 @@ export const NameText = styled.span`
   margin-left: 22px;
   font-size: 16px;
 `;
+
+export const NavPosition = styled.div`
+  position: relative;
+`;

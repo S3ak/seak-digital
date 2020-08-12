@@ -1,29 +1,69 @@
 {
   "name": "seak-digital",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:update": "npm test -- -u",
+    "update:packages": "npx npm-check -u",
+    "semantic-release": "semantic-release",
+    "commit": "git cz"
   },
   "dependencies": {
-    "next": "9.3.5",
+    "custom-env": "^2.0.1",
+    "design-system-utils": "^1.5.0",
+    "dotenv": "^8.2.0",
+    "next": "^9.5.2",
+    "next-manifest": "^3.0.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "^3.10.0",
-    "styled-components": "^5.1.0",
-    "styled-tools": "^1.7.1"
+    "styled-components": "^5.1.1",
+    "styled-media-query": "^2.1.2",
+    "styled-normalize": "^8.0.7",
+    "styled-tools": "^1.7.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-knobs": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/react": "^5.3.18",
-    "babel-loader": "^8.1.0"
+    "@babel/core": "^7.10.4",
+    "@storybook/addon-actions": "^6.0.0-rc.3",
+    "@storybook/addon-docs": "^6.0.0-rc.3",
+    "@storybook/addon-knobs": "^6.0.0-rc.3",
+    "@storybook/addon-links": "^6.0.0-rc.3",
+    "@storybook/addon-storyshots": "^6.0.0-rc.3",
+    "@storybook/addon-viewport": "^6.0.0-rc.3",
+    "@storybook/addons": "^6.0.0-rc.3",
+    "@storybook/react": "^6.0.0-rc.3",
+    "@testing-library/react": "^10.4.6",
+    "babel-loader": "^8.1.0",
+    "chance": "^1.1.6",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "jest": "^24.9.0",
+    "polished": "^3.6.5",
+    "react-test-renderer": "^16.13.1",
+    "semantic-release": "^17.1.1",
+    "storybook-addon-designs": "^5.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S3ak/seak-digital.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
