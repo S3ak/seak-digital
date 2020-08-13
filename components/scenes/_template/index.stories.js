@@ -1,5 +1,4 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
 
 import { GenericComponent } from "./index";
 import componentNotes from "./read-me.md";
@@ -7,10 +6,11 @@ import componentNotes from "./read-me.md";
 export default {
   title: "Scenes/Template",
   component: GenericComponent,
-  decorators: [withKnobs],
   parameters: { notes: componentNotes },
 };
 
-export const Skeleton = () => <GenericComponent initIsLoading />;
-
-export const Base = () => <GenericComponent>Text</GenericComponent>;
+const Template = (args) => <GenericComponent {...args} />;
+export const Base = Template.bind({});
+Base.args = {
+  children: "Text",
+};

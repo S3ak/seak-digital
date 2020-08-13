@@ -1,16 +1,12 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
 
 import { GenericLayout } from "./index";
 import componentNotes from "./read-me.md";
 
 export default {
-  title: "Layouts/Component",
+  title: "Layouts/Template",
   component: GenericLayout,
-  decorators: [withKnobs],
   parameters: { notes: componentNotes },
 };
 
-export const Base = () => (
-  <GenericLayout>Text</GenericLayout>
-);
+export const Base = () => <GenericLayout>Text</GenericLayout>;

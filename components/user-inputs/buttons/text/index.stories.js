@@ -1,6 +1,4 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
 
 import { BtnText } from "./index";
 import componentNotes from "./read-me.md";
@@ -8,10 +6,12 @@ import componentNotes from "./read-me.md";
 export default {
   title: "User-inputs/buttons/text button",
   component: BtnText,
-  decorators: [withKnobs],
   parameters: { notes: componentNotes },
+  argTypes: { handleOnAction: { action: "clicked" } },
 };
 
-export const Base = () => (
-  <BtnText handleOnAction={action("clicked")}>Text</BtnText>
-);
+const Template = (args) => <BtnText {...args} />;
+export const Base = Template.bind({});
+Base.args = {
+  children: "Text",
+};

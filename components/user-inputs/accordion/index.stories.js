@@ -1,17 +1,17 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
-import { action } from "@storybook/addon-actions";
 
 import { Accordion } from "./index";
 
 export default {
   title: "User-inputs/Accordion",
   component: Accordion,
-  decorators: [withKnobs],
+  argTypes: { handleOnAction: { action: "clicked" } },
 };
 
-export const Skeleton = () => <Accordion />;
-
-export const Base = () => (
-  <Accordion handleOnAction={action("clicked")}>Text</Accordion>
-);
+const Template = (args) => <Accordion {...args} />;
+export const Base = Template.bind({});
+export const Skeleton = Template.bind({});
+Skeleton.args = {
+  ...Base.args,
+  initIsLoading: true,
+};

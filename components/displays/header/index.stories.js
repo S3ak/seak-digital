@@ -1,5 +1,4 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
 import { withDesign } from "storybook-addon-designs";
 
 import { Header } from "./index";
@@ -7,20 +6,24 @@ import { Header } from "./index";
 export default {
   title: "Displays/Header",
   component: Header,
-  decorators: [withKnobs, withDesign],
+  decorators: [withDesign],
 };
 
-export const Base = () => <Header>Text</Header>;
+const Template = (args) => <Header {...args} />;
+export const Base = Template.bind({});
 
-export const Skeleton = () => <Header initIsLoading />;
+Base.storyName = "Header story";
 
-Base.story = {
-  name: "Header story",
-  parameters: {
-    design: {
-      type: "figma",
-      url:
-        "https://www.figma.com/file/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79",
-    },
+Base.parameters = {
+  design: {
+    type: "figma",
+    url:
+      "https://www.figma.com/file/CX7dDpAdYurno3RCN7069J/Seak-digital-website?node-id=7693%3A79",
   },
+};
+
+export const Skeleton = Template.bind({});
+Skeleton.args = {
+  ...Base.args,
+  initIsLoading: true,
 };

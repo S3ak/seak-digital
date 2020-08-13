@@ -1,14 +1,16 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
 
 import { GenericComponent } from "./index";
 
 export default {
   title: "Displays/Template",
   component: GenericComponent,
-  decorators: [withKnobs],
 };
 
-export const Skeleton = () => <GenericComponent initIsLoading />;
-
-export const Base = () => <GenericComponent>Text</GenericComponent>;
+const Template = (args) => <GenericComponent {...args} />;
+export const Base = Template.bind({});
+export const Skeleton = Template.bind({});
+Skeleton.args = {
+  ...Base.args,
+  initIsLoading: true,
+};

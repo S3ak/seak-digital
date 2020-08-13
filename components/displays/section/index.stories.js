@@ -1,14 +1,20 @@
 import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
 
 import { Section } from "./index";
 
 export default {
   title: "Displays/Section",
   component: Section,
-  decorators: [withKnobs],
 };
 
-export const Skeleton = () => <Section initIsLoading />;
+const Template = (args) => <Section {...args} />;
+export const Base = Template.bind({});
+Base.args = {
+  children: "Text",
+};
 
-export const Base = () => <Section>Text</Section>;
+export const Skeleton = Template.bind({});
+Skeleton.args = {
+  ...Base.args,
+  initIsLoading: true,
+};
