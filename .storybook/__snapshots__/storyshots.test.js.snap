@@ -213,7 +213,9 @@ exports[`Storyshots Displays/Section Skeleton 1`] = `
         </div>
         <div
           className="styled__SectionHeadingDescription-txa7w1-4 iRRSKb"
-        />
+        >
+          Text
+        </div>
       </div>
     </div>
   </section>
@@ -225,9 +227,7 @@ exports[`Storyshots Displays/Template Base 1`] = `
   <div />
   <section
     className="styled__Wrapper-lhckts-0 kwnXEP"
-  >
-    Text
-  </section>
+  />
 </div>
 `;
 
@@ -241,32 +241,6 @@ exports[`Storyshots Displays/Template Skeleton 1`] = `
 `;
 
 exports[`Storyshots User-inputs/Accordion Base 1`] = `
-<div>
-  <div />
-  <section
-    className="styled__Wrapper-fibm1a-0 fajsWc"
-    id="some-selector"
-    onClick={[Function]}
-  >
-    <div
-      className="styled__Body-fibm1a-2 gHOMbF"
-    >
-      Text
-    </div>
-    <div
-      className="styled__Footer-fibm1a-3 ljHfkV"
-    >
-      <section
-        className="styled__Wrapper-nd8qqs-0 jImrvy"
-      >
-        More
-      </section>
-    </div>
-  </section>
-</div>
-`;
-
-exports[`Storyshots User-inputs/Accordion Skeleton 1`] = `
 <div>
   <div />
   <section
@@ -289,12 +263,42 @@ exports[`Storyshots User-inputs/Accordion Skeleton 1`] = `
 </div>
 `;
 
+exports[`Storyshots User-inputs/Accordion Skeleton 1`] = `
+<div>
+  <div />
+  <section
+    className="styled__Wrapper-fibm1a-0 fajsWc"
+  >
+    <div
+      className="styled__Header-fibm1a-1 jnDcwp"
+    >
+      <div>
+        grey
+      </div>
+    </div>
+    <div
+      className="styled__Body-fibm1a-2 gHOMbF"
+    >
+      <div>
+        grey
+      </div>
+    </div>
+    <div
+      className="styled__Footer-fibm1a-3 ljHfkV"
+    >
+      <div>
+        grey
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots User-inputs/buttons/text button Base 1`] = `
 <div>
   <div />
   <section
     className="styled__Wrapper-nd8qqs-0 jImrvy"
-    onClick={[Function]}
   >
     Text
   </section>
